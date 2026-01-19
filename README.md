@@ -8,7 +8,9 @@ In my drawing, the subsection of the penguin/player details the needed actions o
 
 My plan was not really refined with the role that the GameController played, so I differed from it's note to keep track of the score in it's class and instead kept it within the Player class. I made this decision because I thought it would be more efficient to place it in the OnTriggerEnter2D method when the player collided with coins and the GameController could be more so the middle man of accessing and managing the relationship between both the UI's text and the player script (containing the amount of points) to update it.
 
-Also, I made 1 new class that was not included in my drawing. The coin class simply held the KillSelf() method that was called by the player after colliding with coins and position detection for despawning uncollected ones that both utilized the Destroy(gameObject) method in Update(). I did this because in my drawing, there was no mention of despawning.
+I made 1 new class that was not included in my drawing. The coin class simply held the KillSelf() method that was called by the player after colliding with coins and position detection for despawning uncollected ones that both utilized the Destroy(gameObject) method in Update(). I did this because in my drawing, there was no mention of despawning.
+
+Also, I ended up using a list to manage the coins so that they would all move in the same direction. This was not noted in my plan. 
 
 
 ## Open-Source Assets
